@@ -1,0 +1,22 @@
+//- include partials/header.pug
+h1 Car Form
+form(method='post')
+  .form-group
+    label.col-sm-2.control-label(for='color') Color
+    input#color(type='text' name='color' required='')
+  .form-group
+    label.col-sm-2.control-label(for='make') Make
+    select#make(name='make')
+      option BMW
+      option Audi
+      option Honda
+  .form-group
+    label.col-sm-2.control-label(for='model') Model
+    input#model(type='text' name='model' required='')
+  .form-group
+    label.col-sm-2.control-label(for='year') Year
+    select#year(name='year')
+  .form-group
+    label.col-sm-2.control-label(for='isautomatic') Is it Automatic?
+    input#isautomatic(type='checkbox' name='isautomatic')
+  button.btn.btn-success.col-sm-offset-2 Save

@@ -1,0 +1,18 @@
+//- include partials/header.pug
+main.container
+  h1 Register
+  form(method='post' action='/auth/register')
+    .form-group
+      label.col-sm-2.control-label(for='username') Username: * 
+      input#username(name='username' required='' type='text')
+    .form-group
+      label.col-sm-2.control-label(for='password') Password: * 
+      input#password(name='password' type='password' required='')
+    .form-group
+      label.col-sm-2.control-label(for='confirm') Confirm: * 
+      input#confirm(name='confirm' type='password' required='')
+    .form-group
+      button.btn.btn-success.col-sm-offset-2 Register
+      hr
+      |       Already have an account? 
+      a(href='/auth/login' title='Login') Login 

@@ -1,0 +1,14 @@
+//- include partials/header.pug
+main.container
+  h1 Login
+  form(method='post' action='/auth/login')
+    .form-group
+      label.col-sm-2.control-label(for='username') Username: * 
+      input#username(name='username' required='' type='text')
+    .form-group
+      label.col-sm-2.control-label(for='password') Password: * 
+      input#password(name='password' type='password' required='')
+    button.btn.btn-success.col-sm-offset-2 Login 
+    hr
+    |       Need access? 
+    a(href='/auth/register' title='Register') Register
